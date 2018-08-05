@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Url;
+use App\Observers\UrlObserver;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Url::observe(UrlObserver::class);
     }
 
     /**

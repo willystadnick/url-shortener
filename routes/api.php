@@ -16,3 +16,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('urls', 'Api\UrlController');
+
+Route::get('{url}', 'Api\UrlController@redirect')->where('url', '[0-9a-zA-Z]{16}');
