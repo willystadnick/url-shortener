@@ -30,7 +30,7 @@ class UrlController extends Controller
      */
     public function store(UrlCreateRequest $request)
     {
-        $url = Url::firstOrCreate($request->only('url'));
+        $url = Url::create($request->only('url'));
 
         return response()->json($url, 201);
     }
