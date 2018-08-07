@@ -55,6 +55,10 @@ class UrlController extends Controller
      */
     public function update(UrlUpdateRequest $request, Url $url)
     {
+        if ($request->input('pass') != $url->pass) {
+            return response()->json('Not authorized.', 401);
+        }
+
         $url->update($request->all());
 
         return response()->json($url);
@@ -66,8 +70,12 @@ class UrlController extends Controller
      * @param  Url  $url
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Url $url)
+    public function destroy(Request $request, Url $url)
     {
+        if ($request->input('pass') != $url->pass) {
+            return response()->json('Not authorized.', 401);
+        }
+
         $url->delete();
 
         return response()->json(null, 204);

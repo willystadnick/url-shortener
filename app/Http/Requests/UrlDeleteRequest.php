@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UrlUpdateRequest extends FormRequest
+class UrlDeleteRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,6 @@ class UrlUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'url' => 'unique:urls,url,' . $this->request->get('hash') . ',hash',
-            'hash' => 'unique:urls,hash,' . $this->request->get('hash') . ',hash',
             'pass' => 'required',
         ];
     }

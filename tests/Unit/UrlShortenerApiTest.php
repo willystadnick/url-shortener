@@ -42,8 +42,9 @@ class UrlShortenerApiTest extends TestCase
         $response->assertStatus(201)
             ->assertJsonStructure([
                 'id',
-                'hash',
                 'url',
+                'hash',
+                'pass',
                 'created_at',
                 'updated_at',
             ]);
@@ -65,17 +66,21 @@ class UrlShortenerApiTest extends TestCase
     {
         $url = factory(Url::class)->create();
 
-        $hash = 'myHash';
+        $update = [
+            'url' => 'http://my-url.com',
+            'hash' => 'my-hash',
+            'pass' => $url->pass,
+        ];
 
-        $response = $this->json('PUT', 'api/urls/' . $url->hash, compact('hash'));
+        $response = $this->json('PUT', 'api/urls/' . $url->hash, $update);
 
         $response->assertStatus(200)
-            ->assertExactJson([
+            ->assertJsonFragment([
                 'id' => $url->id,
-                'hash' => $hash,
-                'url' => $url->url,
+                'url' => $update['url'],
+                'hash' => $update['hash'],
+                'pass' => $update['pass'],
                 'created_at' => $url->created_at->format('Y-m-d H:i:s'),
-                'updated_at' => $url->updated_at->format('Y-m-d H:i:s'),
             ]);
     }
 
@@ -83,7 +88,11 @@ class UrlShortenerApiTest extends TestCase
     {
         $url = factory(Url::class)->create();
 
-        $response = $this->json('DELETE', 'api/urls/' . $url->hash);
+        $delete = [
+            'pass' => $url->pass,
+        ];
+
+        $response = $this->json('DELETE', 'api/urls/' . $url->hash, $delete);
 
         $response->assertStatus(204);
 

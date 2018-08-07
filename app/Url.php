@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Url extends Model
 {
     protected $fillable = [
-        'hash',
         'url',
+        'hash',
+        'pass',
     ];
 
     public function getRouteKeyName()

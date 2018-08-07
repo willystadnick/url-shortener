@@ -8,24 +8,32 @@ class UrlObserver
 {
     public function saving(Url $url)
     {
-        return $this->touchHash($url);
+        $this->checkHashes($url);
     }
 
     public function creating(Url $url)
     {
-        return $this->touchHash($url);
+        $this->checkHashes($url);
     }
 
-    private function touchHash(Url $url)
+    private function checkHashes(Url $url)
     {
-        if (empty($url->hash)) {
-            $available = implode('', array_merge(range(0, 9), range('a', 'z'), range('A', 'Z')));
+        $this->check('hash', $url);
+        $this->check('pass', $url);
+    }
+
+    private function check($field, Url $url)
+    {
+        if (empty($url->$field)) {
+            foreach (range(0, 9) as $key) {
+                $available[] = implode('', array_merge(range(0, 9), range('a', 'z'), range('A', 'Z')));
+            }
 
             do {
-                $hash = substr(str_shuffle($available), -16);
-            } while (Url::where(compact('hash'))->exists());
+                $$field = substr(str_shuffle(implode('', $available)), -16);
+            } while (Url::where(compact($field))->exists());
 
-            $url->hash = $hash;
+            $url->$field = $$field;
         }
     }
 }
