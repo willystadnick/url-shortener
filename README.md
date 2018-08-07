@@ -30,8 +30,8 @@ Same as [Laravel 5.6](https://laravel.com/docs/5.6/installation#server-requireme
 
 ### PHPUnit
 
-On project folder, run `phpunit` (or `vendor/bin/phpunit`)
+On project folder, run `phpunit` (or `vendor/bin/phpunit`).
 
 ### Postman
 
-Use this [Postman Collecions](https://www.getpostman.com/collections/0850e7edeccccc2f7537) to perform the requests, changing its data accordingly to your needs.
+Use this [Postman Collecion](https://www.getpostman.com/collections/0850e7edeccccc2f7537) to perform the requests, changing its data accordingly to your needs.
