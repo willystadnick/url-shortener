@@ -11,7 +11,7 @@ class UrlsTableSeeder extends Seeder
      */
     public function run()
     {
-        if (config('app.env' != 'production')) {
+        if (config('app.env') != 'production') {
             factory(App\Url::class, 10)->create();
         }
     }
