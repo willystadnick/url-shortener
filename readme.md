@@ -1,6 +1,6 @@
 # secret001-test
 
-Solutio to [secret001-test](challenge.md).
+Solution to [secret001-test](challenge.md).
 
 ## Dependencies
 
