@@ -1,0 +1,227 @@
+{
+	"id":"044f0df7-2026-c020-b10e-d3a4786488f5",
+	"name":"secret001-test",
+	"description":"",
+	"order":[
+		"b7925262-c0be-4150-4ce5-e9ba7a67f52c",
+		"f8c0239b-6932-ab25-feae-aadd15229ac6",
+		"41ea718a-97d2-b245-3d7f-c673ab61aa80",
+		"0ee5cb80-4888-2fb9-7b69-b4e26df29e9e"
+	],
+	"folders":[
+
+	],
+	"folders_order":[
+
+	],
+	"timestamp":1533676423859,
+	"owner":"599114",
+	"public":false,
+	"requests":[
+		{
+			"id":"0ee5cb80-4888-2fb9-7b69-b4e26df29e9e",
+			"headers":"Accept: application\/json\nContent-Type: application\/json\n",
+			"headerData":[
+				{
+					"key":"Accept",
+					"value":"application\/json",
+					"description":"",
+					"enabled":true
+				},
+				{
+					"key":"Content-Type",
+					"value":"application\/json",
+					"description":"",
+					"enabled":true
+				}
+			],
+			"url":"http:\/\/127.0.0.1:8000\/api\/urls\/1234567890123456",
+			"queryParams":[
+
+			],
+			"preRequestScript":null,
+			"pathVariables":{
+
+			},
+			"pathVariableData":[
+
+			],
+			"method":"DELETE",
+			"data":[
+
+			],
+			"dataMode":"raw",
+			"version":2,
+			"tests":null,
+			"currentHelper":"normal",
+			"helperAttributes":{
+
+			},
+			"time":1533678997350,
+			"name":"Delete",
+			"description":"",
+			"collectionId":"044f0df7-2026-c020-b10e-d3a4786488f5",
+			"responses":[
+
+			],
+			"rawModeData":"{\n    \"pass\": \"9876543210987654\"\n}"
+		},
+		{
+			"id":"41ea718a-97d2-b245-3d7f-c673ab61aa80",
+			"headers":"Accept: application\/json\nContent-Type: application\/json\n",
+			"headerData":[
+				{
+					"key":"Accept",
+					"value":"application\/json",
+					"description":"",
+					"enabled":true
+				},
+				{
+					"key":"Content-Type",
+					"value":"application\/json",
+					"description":"",
+					"enabled":true
+				}
+			],
+			"url":"http:\/\/127.0.0.1:8000\/api\/urls\/1234567890123456",
+			"queryParams":[
+
+			],
+			"preRequestScript":null,
+			"pathVariables":{
+
+			},
+			"pathVariableData":[
+
+			],
+			"method":"PUT",
+			"data":[
+
+			],
+			"dataMode":"raw",
+			"version":2,
+			"tests":null,
+			"currentHelper":"normal",
+			"helperAttributes":{
+
+			},
+			"time":1533678899301,
+			"name":"Update",
+			"description":"",
+			"collectionId":"044f0df7-2026-c020-b10e-d3a4786488f5",
+			"responses":[
+
+			],
+			"rawModeData":"{\n\t\"url\": \"http:\/\/my-url.com\/foo\",\n    \"hash\": \"1234567890123456\",\n    \"pass\": \"9876543210987654\"\n}"
+		},
+		{
+			"id":"b7925262-c0be-4150-4ce5-e9ba7a67f52c",
+			"headers":"Accept: application\/json\n",
+			"headerData":[
+				{
+					"key":"Accept",
+					"value":"application\/json",
+					"description":"",
+					"enabled":true
+				}
+			],
+			"url":"http:\/\/127.0.0.1:8000\/api\/urls\/",
+			"queryParams":[
+
+			],
+			"pathVariables":{
+
+			},
+			"pathVariableData":[
+
+			],
+			"preRequestScript":null,
+			"method":"GET",
+			"collectionId":"044f0df7-2026-c020-b10e-d3a4786488f5",
+			"data":[
+				{
+					"key":"url",
+					"value":"http:\/\/www.test.com.br\/bar",
+					"description":"",
+					"type":"text",
+					"enabled":false
+				},
+				{
+					"key":"hash",
+					"value":"123456",
+					"description":"",
+					"type":"text",
+					"enabled":true
+				},
+				{
+					"key":"_method",
+					"value":"PUT",
+					"description":"",
+					"type":"text",
+					"enabled":true
+				}
+			],
+			"dataMode":"params",
+			"name":"List",
+			"description":"",
+			"descriptionFormat":"html",
+			"time":1533676429721,
+			"version":2,
+			"responses":[
+
+			],
+			"tests":null,
+			"currentHelper":"normal",
+			"helperAttributes":{
+
+			}
+		},
+		{
+			"id":"f8c0239b-6932-ab25-feae-aadd15229ac6",
+			"headers":"Accept: application\/json\n",
+			"headerData":[
+				{
+					"key":"Accept",
+					"value":"application\/json",
+					"description":"",
+					"enabled":true
+				}
+			],
+			"url":"http:\/\/127.0.0.1:8000\/api\/urls\/",
+			"queryParams":[
+
+			],
+			"preRequestScript":null,
+			"pathVariables":{
+
+			},
+			"pathVariableData":[
+
+			],
+			"method":"POST",
+			"data":[
+				{
+					"key":"url",
+					"value":"http:\/\/my-url.com",
+					"description":"",
+					"type":"text",
+					"enabled":true
+				}
+			],
+			"dataMode":"params",
+			"version":2,
+			"tests":null,
+			"currentHelper":"normal",
+			"helperAttributes":{
+
+			},
+			"time":1533678841798,
+			"name":"Create",
+			"description":"",
+			"collectionId":"044f0df7-2026-c020-b10e-d3a4786488f5",
+			"responses":[
+
+			]
+		}
+	]
+}
