@@ -1,25 +1,18 @@
-# secret001-test
+# url-shortener
 
-Solution to [secret001-test](challenge.md).
+Solution to [url-shortener](challenge.md).
 
 ## Dependencies
 
 Same as [Laravel 5.6](https://laravel.com/docs/5.6/installation#server-requirements):
 
-- PHP >= 7.1.3
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
-- Ctype PHP Extension
-- JSON PHP Extension
-- [Composer](https://getcomposer.org/)
+- [PHP](https://php.net/) ^7.1
+- [Composer](https://getcomposer.org/) ^1.9
 
 ## Installation
 
-1. Clone this repository `git clone git@github.com:willystadnick/secret001-test.git`
-1. Enter the project folder `cd secret001-test`
+1. Clone this repository `git clone git@github.com:willystadnick/url-shortener.git`
+1. Enter the project folder `cd url-shortener`
 1. Install dependencies `composer install`
 1. Copy environment file template `cp .env.example .env`
 1. Generate application key `php artisan key:generate`
@@ -37,3 +30,8 @@ On project folder, run `phpunit` (or `vendor/bin/phpunit`).
 ### Postman
 
 Use this [Postman Collecion](collection.json) to perform the requests, changing its data accordingly to your needs.
+
+## Autor
+
+| [<img src="https://avatars2.githubusercontent.com/u/1824706?s=120&v=4" width=120><br><sub>@willystadnick</sub>](https://github.com/willystadnick) |
+| :---: |

@@ -10,7 +10,7 @@ Algumas características que o seu serviço deverá ter são:
 
 - Seguir as boas práticas de desenvolvimento de APIs RESTful;
 - Usar git para versionamento. A hospedagem da aplicação pode ser feita em qualquer serviço que você já tem costume de usar (github, bitbucket, gitlab, etc.), e você pode compartilhar conosco o projeto através de um desses serviços ou nos enviar o pacote em formato ZIP (neste caso, lembre-se de incluir a pasta .git no momento da compactação);
-- Você poderá disponibilizar este desafio publicamente se assim desejar, desde que não mencione o nome do projeto ou da empresa (secret001);
+- Você poderá disponibilizar este desafio publicamente se assim desejar, desde que não mencione o nome do projeto ou da empresa;
 - A autenticação do usuário não é necessária para teste desafio;
 - O projeto deve conter um arquivo README.md explicando as dependências e etapas de instalação (em Inglês ou Português);
 - A inicialização do projeto deve ser possível executando os comandos padrões `composer install` e `php artisan migrate`. Se houver uma alimentação inicial de dados do banco, ela deve ser feita executando o comando `php artisan db:seed`.
@@ -29,7 +29,7 @@ A lista abaixo compreende as ações mínimas que a aplicação deverá realizar
 
 Você pode incrementar outras ações, se achar necessário, porém um usuário da aplicação deverá poder, no mínimo:
 
-- Cadastrar uma URL, gerando a sua versão minificada. Esta versão será uma rota na própria aplicação, sendo composta pelo domínio ou IP da máquina e uma hash única de até 16 dígitos (ex.: https://secret001.me/ajb12p6t4a);
+- Cadastrar uma URL, gerando a sua versão minificada. Esta versão será uma rota na própria aplicação, sendo composta pelo domínio ou IP da máquina e uma hash única de até 16 dígitos (ex.: https://url-shortener.me/ajb12p6t4a);
 - Consultar os detalhes de uma URL minificada;
 - Contar o número de acessos em determinada URL minificada;
 - Quando acessada a rota da url minificada, ela deverá redirecionar para a URL original com o [status 301](https://httpstatuses.com/301);
