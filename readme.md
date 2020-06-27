@@ -1,6 +1,6 @@
 # url-shortener
 
-Solution to [url-shortener](challenge.md).
+Solution to [challenge](challenge.md).
 
 ## Dependencies
 
