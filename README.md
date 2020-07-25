@@ -31,7 +31,7 @@ On project folder, run `phpunit` (or `vendor/bin/phpunit`).
 
 Use this [Postman Collecion](collection.json) to perform the requests, changing its data accordingly to your needs.
 
-## Autor
+## Author
 
 | [<img src="https://avatars2.githubusercontent.com/u/1824706?s=120&v=4" width=120><br><sub>@willystadnick</sub>](https://github.com/willystadnick) |
 | :---: |
